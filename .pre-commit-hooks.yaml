@@ -200,3 +200,11 @@
     language: python
     types: [text]
     stages: [commit, push, manual]
+
+-   id: add_jira_id
+    name: add jira id new
+    description: add jira id new
+    entry: add_jira_id
+    language: python
+    types: [text]
+    stages: [commit, push, manual]
