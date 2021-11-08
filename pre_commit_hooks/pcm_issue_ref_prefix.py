@@ -16,7 +16,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     #Detect our branch
     branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip().decode('utf-8')
     #Matching, such as issue-123, issue-1234 fix
-    result = re.match('^BTCWT-(\d+)((-.*)+)?$', branch)
+    result = re.match('^BTWCT-(\d+)((-.*)+)?$', branch)
     if not result:
         #Branch name does not match
         warning = "WARN: Unable to add issue prefix since the format of the branch name dismatch."
