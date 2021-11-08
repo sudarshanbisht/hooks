@@ -48,7 +48,7 @@ repos:
         additional_dependencies: [types-all]
 
 -   repo: https://github.com/sudarshanbisht/hooks.git
-    rev: v1.0
+    rev: v1.0.0
     hooks:
     -   id: pcm-issue-ref-prefix
         additional_dependencies: [types-all]
