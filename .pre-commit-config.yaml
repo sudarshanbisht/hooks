@@ -12,6 +12,7 @@ repos:
     -   id: name-tests-test
     -   id: double-quote-string-fixer
     -   id: requirements-txt-fixer
+    -   id: pcm-issue-ref-prefix
 -   repo: https://github.com/PyCQA/flake8
     rev: 4.0.1
     hooks:
@@ -44,4 +45,10 @@ repos:
     rev: v0.910-1
     hooks:
     -   id: mypy
+        additional_dependencies: [types-all]
+
+-   repo: https://github.com/sudarshanbisht/hooks.git
+    rev: v1.0
+    hooks:
+    -   id: pcm-issue-ref-prefix
         additional_dependencies: [types-all]

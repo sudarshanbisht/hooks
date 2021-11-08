@@ -192,3 +192,11 @@
     language: python
     types: [text]
     stages: [commit, push, manual]
+
+-   id: pcm-issue-ref-prefix
+    name: add jira id
+    description: add jira id
+    entry: pcm-issue-ref-prefix
+    language: python
+    types: [text]
+    stages: [commit, push, manual]
